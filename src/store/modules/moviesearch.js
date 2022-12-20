@@ -11,7 +11,6 @@ const state = {
     { episode_id: 9, title: "IV - My Life My Way", release_date: "1977-05-23" },
     { episode_id: 7, title: "IV - Ping Me", release_date: "1977-09-25" },
   ],
-  sortBy: "",
 };
 
 const getters = {
@@ -40,17 +39,8 @@ const actions = {
 };
 
 const mutations = {
-  setMoviesList: (state, moviesList) => (state.moviesList = moviesList),
+  setMoviesList: (state, moviesList1) => (state.moviesList = moviesList1),
   setSortBy: (state, sortBy) => (state.sortBy = sortBy),
-  //   newTodo: (state, todo) => state.todos.unshift(todo),
-  //   removeTodo: (state, id) =>
-  //     (state.todos = state.todos.filter((todo) => todo.id !== id)),
-  //   updateTodo: (state, updTodo) => {
-  //     const index = state.todos.findIndex((todo) => todo.id === updTodo.id);
-  //     if (index !== -1) {
-  //       state.todos.splice(index, 1, updTodo);
-  //     }
-  //   },
 };
 
 export default {
